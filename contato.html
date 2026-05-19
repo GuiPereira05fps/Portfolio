@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/ico/g.ico" type="image/x-icon">
+    <script src="index.js" defer></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header class="topnav">
+        <div class="wrapper topnav__wrapper">
+            <a href="index.html" class="topnav__homepage">
+                <img src="img/letter-g.svg" alt="Homepage link" class="topnav__logo" width="58" height="58">
+                <p class="topnav__author__name">Guilhermy Pereira</p>
+            </a>
+            <nav class="topnav__wrapper">
+                <ul class="topnav__menu">
+                    <li class="topnav__menu__item">
+                        <a href="index.html" class="topnav_link">Sobre mim</a>
+                    </li>
+                    <li class="topnav__menu__item">
+                        <a href="formacao.html" class="topnav_link">Formação</a>
+                    </li>
+                    <li class="topnav__menu__item">
+                        <a href="portfolio.html" class="topnav_link">Portfólio</a>
+                    </li>
+                    <li class="topnav__menu__item">
+                        <a href="contato.html" class="topnav_link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact">
+        <h2 class="contact__title">Entre em contato!</h2>
+        <div class="contacts-container wrapper">
+            <p class="contacts__paragraph">Me diga como eu poderia lhe ser útil e me dê a oportunidade de aprender
+                com você.
+                Juntos sei que conseguiremos.</p>
+            <div class="contacts__form-container">
+                <h3 class="contacts__form__title">Me envie uma mensagem!</h3>
+                <form id="formulario" class="form">
+                    <!--Obrigatoriedade dos inputs controlado por JavaScript. Não adicionar required. Não mudar id.-->
+                    <div class="label_container">
+                        <label for="nome">Nome<span style="color: red;">*</span></label>
+                        <input type="text" name="nome" id="nome" placeholder="Insira seu nome" class="form__input">
+                    </div>
+                    <div class="label_container">
+                        <label for="email">E-mail<span style="color: red;">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="Escolha seu melhor email"
+                            class="form__input">
+                    </div>
+                    <div class="label_container">
+                        <label for="mensagem">Mensagem<span style="color: red;">*</span></label>
+                        <textarea id="mensagem" name=" mensagem" maxlength="2000"
+                            placeholder="Escreva sua mensagem aqui" class="form__input textarea"></textarea>
+                    </div>
+                    <button type="submit" class="contacts__submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="contacts__social">
+                <ul class="contacts__list">
+                    <li class="contacts__list-item">
+                        <img src="img/social/github.png" alt="github" class="contacts__list-img">
+                        <a href="https://www.github.com/GuiPereira05fps" target="_blank"
+                            class="contacts__list-link">/GuiPereira05fps</a>
+                    </li>
+                    <li class="contacts__list-item"><img src="img/social/linkedin.png" alt="linkedin"
+                            class="contacts__list-img"> <a href="https://www.linkedin.com/in/guilhermyncp"
+                            target="_blank" class="contacts__list-link">/guilhermyncp</a></li>
+                    <li class="contacts__list-item"><img src="img/social/discord.png" alt="discord"
+                            class="contacts__list-img"><a href="https://www.discordapp.com/users/281073143722803200"
+                            target="_blank" class="contacts__list-link">10framesporsegundo</a></li>
+                    <li class="contacts__list-item"><img src="img/social/email.png" alt="email"
+                            class="contacts__list-img"><a href="mailto:guilhermyncp@gmail.com"
+                            class="contacts__list-link">guilhermyncp@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">© All rights reserved - Guilhermy Pereira 2026</p>
+    </footer>
+</body>
+</html>
